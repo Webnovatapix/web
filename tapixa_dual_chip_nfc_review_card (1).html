@@ -209,23 +209,9 @@
       
       <!-- Brand Logo -->
       <a href="javascript:void(0)" onclick="switchTab('overview')" class="flex items-center gap-3 focus:outline-none">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-950 via-slate-900 to-emerald-950 border border-cyan-400/40 flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden relative group">
-          <!-- Optional repository logo fallback -->
-          <img src="logo.png" alt="Tapixa Logo" class="w-full h-full object-contain p-1 absolute inset-0 z-10" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" />
-          <!-- Contactless NFC Wave Vectors matching brand theme -->
-          <svg class="w-6 h-6 text-cyan-400 transition-transform group-hover:scale-110 relative z-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 15.5C4.5 13.5 4.5 10.5 5.5 8.5" stroke="url(#nfc-wave-grad)" stroke-width="2.3" stroke-linecap="round"/>
-            <path d="M9.5 17.8C8 14.5 8 9.5 9.5 6.2" stroke="url(#nfc-wave-grad)" stroke-width="2.3" stroke-linecap="round"/>
-            <path d="M13.8 20.2C11.8 15.5 11.8 8.5 13.8 3.8" stroke="url(#nfc-wave-grad)" stroke-width="2.3" stroke-linecap="round"/>
-            <path d="M18.2 22.5C15.8 16.5 15.8 7.5 18.2 1.5" stroke="url(#nfc-wave-grad)" stroke-width="2.3" stroke-linecap="round"/>
-            <defs>
-              <linearGradient id="nfc-wave-grad" x1="4" y1="12" x2="19" y2="12" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#38bdf8" />
-                <stop offset="1" stop-color="#10b981" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+       <div class="w-10 h-10 flex items-center justify-center overflow-hidden">
+  <img src="logo.png" alt="Tapixa Logo" class="w-full h-full object-contain">
+</div>
         <div class="flex flex-col text-left">
           <div class="flex items-center gap-1.5">
             <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-cyan-400 bg-clip-text text-transparent">
@@ -339,7 +325,7 @@
                 <div class="h-10 w-[1px] bg-slate-700 hidden sm:block"></div>
 
                 <div class="space-y-1 text-xs text-slate-300">
-                  <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Free Installation & Profile Setup</div>
+                  <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Free Installation </div>
                   <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Free Live Video / On-Site Demo</div>
                   <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> 1-Year Replacement Warranty</div>
                 </div>
@@ -365,12 +351,12 @@
                   <span class="text-xs text-slate-300">No monthly charge</span>
                 </div>
                 <div class="p-3 rounded-xl bg-slate-900/50 border border-slate-800">
-                  <span class="text-emerald-400 text-xs font-mono font-bold block">1-YR REPLACEMENT</span>
-                  <span class="text-xs text-slate-300">Official warranty</span>
+                  <span class="text-emerald-400 text-xs font-mono font-bold block">MATERIAL</span>
+                  <span class="text-xs text-slate-300">ACRYLIC</span>
                 </div>
                 <div class="p-3 rounded-xl bg-slate-900/50 border border-slate-800 col-span-2 sm:col-span-1">
-                  <span class="text-sky-400 text-xs font-mono font-bold block">2 NFC COILS</span>
-                  <span class="text-xs text-slate-300">Fast 360° tap</span>
+                  <span class="text-sky-400 text-xs font-mono font-bold block">DIMENTION</span>
+                  <span class="text-xs text-slate-300">12 x 12 CM</span>
                 </div>
               </div>
 
@@ -384,7 +370,7 @@
                 <!-- Mode Selection Switcher -->
                 <div class="flex items-center justify-between gap-1 p-1 rounded-2xl bg-slate-950 border border-slate-800 mb-4">
                   <button id="btn360" onclick="switchStageMode('spin')" class="flex-1 py-1.5 px-2 rounded-xl text-xs font-semibold transition-all whitespace-nowrap bg-cyan-500 text-slate-950 shadow-md">
-                    <i class="fa-solid fa-arrows-rotate mr-1"></i>360° Spin
+                    <i class="fa-solid fa-arrows-rotate mr-1"></i>In 2 variants
                   </button>
                   <button id="btnArch" onclick="switchStageMode('architecture')" class="flex-1 py-1.5 px-2 rounded-xl text-xs font-semibold transition-all whitespace-nowrap text-slate-400 hover:text-white">
                     <i class="fa-solid fa-microchip mr-1"></i>Dual Chips
@@ -483,7 +469,7 @@
                       <p class="text-xs font-bold text-emerald-400 flex items-center justify-center gap-1.5">
                         <i class="fa-solid fa-circle-check"></i> Instant Tap Detected!
                       </p>
-                      <p class="text-[10px] text-slate-300 mt-1">Google 5★ Review window opened in 0.2s via Dual NFC antennas.</p>
+                      <p class="text-[10px] text-slate-300 mt-1">Google 5★ Review window open  within 2s via Dual NFC antennas.</p>
                     </div>
                   </div>
 
@@ -545,7 +531,7 @@
               </div>
               <h3 class="text-lg font-bold text-white mb-2">We Program & Stress-Test</h3>
               <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                Our technicians bind both internal microchips to your official Google Review URL, verify omnidirectional triggers, and configure your fallback QR.
+                Our technicians bind both chips to your official Google Review URL, verify omnidirectional triggers, and configure your fallback QR.
               </p>
             </div>
 
@@ -652,8 +638,8 @@
                   <li class="flex items-start gap-3">
                     <i class="fa-solid fa-circle-check text-cyan-400 text-base mt-0.5"></i>
                     <div>
-                      <strong class="text-white block">Full 360° Omnidirectional Scan:</strong>
-                      Tap from any angle, edge or top in 0.2 seconds flat.
+                      <strong class="text-white block">Tap or Scan:</strong>
+                      Tap from any angle, edge or top in 2 seconds flat.
                     </div>
                   </li>
                   <li class="flex items-start gap-3">
@@ -666,7 +652,7 @@
                 </ul>
               </div>
               <div class="pt-6 border-t border-slate-800 mt-6 text-xs text-emerald-400 font-bold flex items-center justify-between">
-                <span>99.8% Scan Success Rate</span>
+                <span>98.8% Scan Success Rate</span>
                 <span>₹899 Fixed One-Time</span>
               </div>
             </div>
@@ -681,8 +667,8 @@
                 <span class="text-white font-bold">Dual NTAG213 High-Frequency</span>
               </div>
               <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
-                <span class="text-slate-500 block mb-1">Pricing</span>
-                <span class="text-cyan-400 font-bold font-mono">₹899 / Unit (Zero Subscriptions)</span>
+                <span class="text-slate-500 block mb-1">⚠️ ATTENTION</span>
+                <span class="text-cyan-400 font-bold font-mono">Do not stick on metal surfaces; it will block the signal</span>
               </div>
               <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
                 <span class="text-slate-500 block mb-1">Warranty Term</span>
